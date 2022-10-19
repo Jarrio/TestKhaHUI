@@ -1,0 +1,15 @@
+[submodule "haxe_modules/aidenecs"]
+	path = haxe_modules/aidenecs
+	url = https://github.com/Aidan63/ecs.git
+[submodule "haxe_modules/safety"]
+	path = haxe_modules/safety
+	url = https://github.com/RealyUniqueName/Safety.git
+[submodule "haxe_modules/bits"]
+	path = haxe_modules/bits
+	url = https://github.com/RealyUniqueName/Bits
+[submodule "haxe_modules/haxeui-core"]
+	path = haxe_modules/haxeui-core
+	url = https://github.com/haxeui/haxeui-core
+[submodule "haxe_modules/haxeui-kha"]
+	path = haxe_modules/haxeui-kha
+	url = https://github.com/haxeui/haxeui-kha
