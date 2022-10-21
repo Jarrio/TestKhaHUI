@@ -1,5 +1,6 @@
 <module>
     <components>
         <class package="components.ui" />
+        <class package="components.ui.page" />
     </components>
 </module>

@@ -1,5 +1,7 @@
 package;
 
+import js.Browser;
+import util.Electron.TExposed;
 import haxe.ui.ComponentBuilder;
 import haxe.ui.core.Screen;
 import haxe.ui.macros.ComponentMacros;
@@ -12,7 +14,7 @@ import kha.System;
 
 class Main {
 	static var universe:Universe;
-
+	public static var electron:TExposed;
 	static function update(): Void {
 		universe.update(1 / 60);
 	}
@@ -35,6 +37,11 @@ class Main {
 						}
 					]
 				});
+
+				var foo:Dynamic = Browser.window;
+				Main.electron = foo.electron;
+				trace(foo.electron);
+				
 				Scheduler.addTimeTask(function () { update(); }, 0, 1 / 60);
 			});
 		});

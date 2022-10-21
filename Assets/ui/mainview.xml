@@ -1,31 +1,37 @@
 <vbox style="padding: 5px;" width="100%" height="100%">
-    <hbox width="100%" height="100%">
-        <vbox width="20%" height="100%">
-            <button id='button' text="More Stuff" width="100%" />
-            <scrollview width="100%" height="100%" contentWidth="100%">
-                <vbox width="100%">
-									<button text="Home" onclick="view.selectedIndex = 0" />
-									<button text="Settings" onclick="view.selectedIndex = 1"/>
-									<button text="Button" width="100%" />
-									<button text="Button" />
-									<button text="Button" />
-									<button text="Button" />
-									<button text="Button" />
-									<button text="Button" />
-									<button text="Button" />
-									<button text="Button" />
-									<button text="Button" />
-									<button text="Button" />
-                </vbox>
-            </scrollview>
-            <hbox width="100%">
-                <button text="More Stuff" width="100%" />
-                <button text="More Stuff" width="100%" />
-            </hbox>
-        </vbox>    
-        <stack id="view" width="80%" height="100%" style="background-color:#000;">
-					<homepage />
-					<settingspage />
-				</stack>
-    </hbox>
+<style>
+.nav_button {
+	width: 100%;
+}
+</style>
+<hbox width="100%" height="100%">
+	<vbox width="20%" height="100%">
+		<button id='button' text="More Stuff" width="100%" />
+		<scrollview width="100%" height="100%" contentWidth="100%">
+			<vbox width="100%">
+				<button styleName="nav_button" text="Home" onclick="view.selectedIndex = 0" />
+				<button styleName="nav_button" text="Table" onclick="view.selectedIndex = 1"/>
+				<button styleName="nav_button" text="Other" onclick="view.selectedIndex = 2"/>
+				<button styleName="nav_button" text="Button" />
+				<button styleName="nav_button" text="Button" />
+				<button styleName="nav_button" text="Button" />
+				<button styleName="nav_button" text="Button" />
+				<button styleName="nav_button" text="Button" />
+				<button styleName="nav_button" text="Button" />
+				<button styleName="nav_button" text="Button" />
+				<button styleName="nav_button" text="Button" />
+				<button styleName="nav_button" text="Button" />
+			</vbox>
+		</scrollview>
+		<hbox width="100%">
+			<button text="More Stuff" width="100%" />
+			<button text="More Stuff" width="100%" />
+		</hbox>
+	</vbox>    
+	<stack id="view" width="80%" height="100%" style="background-color:#000;">
+		<home />
+		<tabledata />
+		<settings />
+	</stack>
+</hbox>
 </vbox>

@@ -1,0 +1,9 @@
+<vbox>
+	<frame text="Options">
+		<hbox>
+			<button id="clear_data" text="Clear" />
+			<button id="load_file" text="Load" />
+			<button id="save_file" text="Save" />
+		</hbox>
+	</frame>
+</vbox>
