@@ -13,9 +13,9 @@
 [submodule "haxe_modules/haxeui-kha"]
 	path = haxe_modules/haxeui-kha
 	url = https://github.com/haxeui/haxeui-kha
-[submodule "haxe_modules/nodejs"]
-	path = haxe_modules/nodejs
-	url = https://github.com/HaxeFoundation/hxnodejs.git
 [submodule "haxe_modules/electron"]
 	path = haxe_modules/electron
 	url = https://github.com/tong/hxelectron
+[submodule "haxe_modules/hxnodejs"]
+	path = haxe_modules/hxnodejs
+	url = https://github.com/HaxeFoundation/hxnodejs.git
