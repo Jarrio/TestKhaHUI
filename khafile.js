@@ -22,8 +22,8 @@ callbacks.postBuild = () => {
 	console.info('here ');
 	try {
 		//console.dir(project);
-		fs.copyFileSync('./build/debug-html5/custom/electron.js', './build/debug-html5/electron.js');
-		fs.copyFileSync('./build/debug-html5/custom/preload.js', './build/debug-html5/preload.js');
+		fs.copyFileSync('./electron_files/electron.js', './build/debug-html5/electron.js');
+		fs.copyFileSync('./electron_files/preload.js', './build/debug-html5/preload.js');
 		// file written successfully
 	} catch (err) {
 		console.error(err);
